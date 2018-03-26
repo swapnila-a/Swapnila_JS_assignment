@@ -1,0 +1,65 @@
+<!DOCTYPE html>		
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> JS</title>
+<style>
+    .c1 , .buttonclass {
+      text-align: center; 
+    }
+	.button {
+      text-align: center; 
+      background-color: #383838;
+      border: none;
+	  color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }	
+	.c1 {
+	  text-color : "blue";
+	}
+    #img1 {
+      width: 300px;
+      height: 500px;
+      margin : auto;
+     }
+	img {
+	max-width : 100%;
+	}
+  </style>
+<script type = "text/javascript">
+        function black()
+        {
+            document.getElementById("img1").innerHTML= '<img src="images/black.jpeg" alt="">';
+        }
+        function blue()
+        {
+            document.getElementById("img1").innerHTML= '<img src="images/blue.jpeg" alt="">';
+        }
+		function gold()
+        {
+            document.getElementById("img1").innerHTML= '<img src="images/gold.jpeg" alt="">';
+        }
+        function rosegold()
+        {
+            document.getElementById("img1").innerHTML= '<img src="images/rose-gold.jpeg" alt="">';
+        }
+</script>
+</head>
+<body>
+<h1 class="c1"> Javascript Assignment </h1>
+<div class="buttonclass">
+ <button type="button" class="button" onClick="black()">Black</button> 
+ <button type="button" class="button" onClick="blue()">Blue</button>
+ <button type="button" class="button" onClick="gold()">Gold</button> 
+ <button type="button" class="button" onClick="rosegold()">Rosegold</button> 
+</div>
+<br>
+<div id="img1" class="class1">
+</div>
+</body>	
